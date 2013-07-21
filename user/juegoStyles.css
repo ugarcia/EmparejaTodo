@@ -1,0 +1,65 @@
+body {
+	background-color:#F0D0A0;
+
+}
+ 
+#mainTable {
+	width:100%;
+	height:100%;
+
+ }
+
+ #mainTable td {
+	border: 3px inset grey;
+	vertical-align:top;
+}
+
+ td.celdaizq  {
+	width:15%;
+	height:100%;
+
+ }
+ 
+ td.celdadcha  {
+	text-align:center;
+	width:100%;
+	height:100%;
+ }
+ 
+ hr {
+	color:grey;
+ }
+ 
+.topHr {
+	margin-top:20px;
+}
+
+.topTitles {
+	margin:30px 0px 30px 0px; 
+	background-color:white;
+	padding:5px 15px 5px 15px;
+	text-align:center;
+	font:18pt bolder Arial;
+}
+
+ #tableInput {
+	margin:10px 0px 20px 0px;	
+ }
+ 
+ #tableInput td {
+	padding-top:10px;
+	padding-bottom:10px;
+	font:14pt bold Verdana;
+	border:0px;
+ }
+ 
+.classButton {
+	font:15pt bold Arial;
+	margin-top:40px;
+ }
+ 
+ .classImg {
+	padding:0px 0px 0px 0px;
+	margin:2px 2px 2px 2px; 
+ }
+ 

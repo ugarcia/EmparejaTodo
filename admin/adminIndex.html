@@ -1,0 +1,68 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+   
+ <html>
+	<head>
+		<title>
+			Empareja Todo - Vista Administrador
+		</title>
+		<link rel='stylesheet' href='../common/commonStyles.css' type='text/css'>
+		<link rel='stylesheet' href='adminStyles.css' type='text/css'>
+		<script src="../common/common.js"></script>
+		<script src="adminIndex.js"></script>
+		<script src="altaUsuarios.js"></script>
+		<script src="gestionUsuarios.js"></script>
+		<script src="modificarUsuario.js"></script>
+		<script src="gestionSolicitudes.js"></script>
+	</head>
+	<body onLoad='Javascript:resizeHeightToWin("adminWinDiv");comprobarAdmin();' onResize='doAdminResize()'>
+		<div id='adminWinDiv' name='adminWinDiv' class='winDiv'>
+			<table class='winTable'>
+				<tr class='headerFooterTr'>
+					<td id='headerTd' name='headerTd' colspan=2>
+						Empareja Todo - Vista Administrador
+					</td>
+				</tr>
+				<tr class='mainTr'>
+					<td class='indexTd'>
+						<p class='indexTitleP'>
+							INDICE
+						</p>
+						<ul class='indexUl'>
+							<li>
+								<a href='Javascript:mostrarVistaAdmin(1);'>
+									Alta Usuario
+								</a>
+							</li>
+							<li>
+								<a href='Javascript:mostrarVistaAdmin(2);'>
+									Usuarios Registrados
+								</a>
+							</li>
+							<li>
+								<a href='Javascript:mostrarVistaAdmin(4);'>
+									Solicitudes Alta
+								</a>
+							</li>
+						
+						
+						</ul>
+					</td>
+					<td class='contentTd' id='adminContent' name='adminContent'>
+						<p id='bigContentP' name='bigContentP'>
+							WELCOME ADMIN
+						</p>
+					</td>
+				</tr>
+				<tr class='headerFooterTr'>
+					<td colspan=2>
+						TDSW S.L. Copyright
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+ </html>
+
+ 

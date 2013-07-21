@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title> Juego_Cartas</title>
+	<link rel='stylesheet' href='juegoStyles.css' type='text/css'>
+	<script src="../common/common.js"></script>
+	<script src="juegoCartas.js"></script>
+</head>
+
+<body onload='loadInputs()'>
+
+	<table id='mainTable'>
+		 <tr>
+			<td class='celdaizq'>
+			  <form id='mainForm'>
+				<hr class='topHr'>
+				<p class='topTitles'>Datos del Juego</p>
+				<table id='tableInput'>
+					<tr>
+						<td>
+							<b>Baraja:</b>
+						</td>
+						<td>
+							<select id='inputBaraja'>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<b>Nº Cartas:</b>
+						</td>
+						<td>
+							<select id='inputCartas'>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>		
+							<b>Nº Filas:</b>
+						</td>
+						<td>
+							<select id='inputFilas'>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>		
+							Tiempo Máximo:
+						</td>
+						<td>
+							<input id='maxTime' type='text' value='' size='10'>
+
+						</td>
+					</tr>
+				</table>
+				
+				<hr class='topHr'>
+				<center>
+					<input id='startButton' type='button' class='classButton' value='Jugar' onclick='loadCartas();startGame()'></br>
+				</center>
+				<hr class='topHr'>
+				Puntuación:
+				<input id='puntuacion' type='text' readonly='true' value='' size='15'>
+				<br/><br/>
+				Turnos utilizados:
+				<input id='turnos' type='text' readonly='true' value='' size='10'>
+				<hr class='topHr'>
+			  </form>
+			</td>
+			
+
+			<td id='gameCell' class='celdadcha'>
+				<div id='gameDiv'>
+					<hr class='topHr'>
+					<p class='topTitles'>Juego de Imágenes por parejas</p>
+					<hr>
+				</div>
+			</td>
+			
+		 </tr>
+	</table> 
+
+</body>
+</html>

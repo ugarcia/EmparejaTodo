@@ -1,0 +1,103 @@
+
+!!!!NOTA IMPORTANTE !!!!
+------------------------
+
+	Tras importar 'emparejaTodo_orig.sql'
+	tendremos tan sólo una entrada en la
+	tabla de usuarios, correspondiente al
+	administrador inicial (necesario para
+	poder autorizar a jugadores). Sus datos
+	de autenticación son:
+
+	Login: 	   admin
+	------
+
+	Password:  <ninguno>
+	---------
+
+	Una vez autenticado se pueden modificar
+	todos los datos con la opción correspondiente.
+
+
+
+
+
+CONTENIDO DE LOS DIRECTORIOS:
+-----------------------------
+
+
+admin:
+------
+
+	--> Pagina principal 'adminIndex.html'
+	--> Archivos de scripts de cliente JS 
+		relacionados con la página
+	--> Archivo 'adminStyles.css' con los
+		estilos asociados
+	--> Archivo 'adminRequests.php'con los
+		scripts del servidor relacionados
+		con la pagina
+
+cards
+------
+
+	--> directorio 'orig' con imagenes originales
+		del juego (baraja -default-)
+	--> Imagenes subidas por los usuarios (inicialmente
+		vacio).
+
+
+common:
+------
+
+	--> Pagina de login 'login.html' y archivo de
+		scripts de cliente 'login.js' relacionado.
+	--> Pagina de registro 'register.html' y archivo de
+		scripts de cliente 'register.js' relacionado.
+	--> Archivo 'common.js' con los	scripts comunes de
+		cliente relacionados con la aplicacion.
+	--> Archivo 'commonStyles.css' con los
+		estilos comunes asociados a la aplicacion.
+	--> Archivo 'commonRequests.php'con los
+		scripts comunes del servidor relacionados
+		con la aplicacion.
+
+
+doc
+------
+
+	**SE SUPONIA QUE LO SIGUIENTE, PERO CON LA LIMITACION
+	LA MEMORIA NO SE INCLUYE EN EL ZIP AL SERVIDOR
+
+	--> Documentacion (Memoria) de la aplicacion.
+
+
+img
+------
+
+	--> Imágenes utilizadas en el diseño de la
+		 aplicacion.
+
+sql
+------
+
+	--> Volcado con la
+		configuración original de la BD.
+
+
+user:
+------
+
+	--> Pagina principal 'userIndex.html'
+	--> Archivos de scripts de cliente JS 
+		relacionados con la página
+	--> Archivo 'userStyles.css' con los
+		estilos asociados
+	--> Pagina del juego 'juegoCartas.html' , archivo
+		 de scripts de cliente 'juegoCartas.js'
+		y de estilos del juego 'juegoStyles.css'
+		 relacionados con el juego.
+	--> Archivo 'userRequests.php'con los
+		scripts del servidor relacionados
+		con las paginas anteriores
+

@@ -1,0 +1,137 @@
+
+/*------------------------------------------------------*/
+/* Estilos de ventana principal						  	*/
+/*------------------------------------------------------*/
+
+div.winDiv {
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+}
+
+table.winTable {
+	width:100%;
+	height:100%;
+	border-collapse:collapse;
+	margin:0px;
+
+}
+
+tr.headerFooterTr  {
+	height:40px;
+}
+		
+tr.headerFooterTr  td {
+	background-color:#E0FFEE;
+	text-align:center;
+	font:bolder 20pt Arial;
+	border:5px double #FFCC66;
+	padding:10px 10px 10px 10px;
+}
+
+tr.mainTr {
+	height:100%;
+	vertical-align:top;
+}
+
+tr.mainTr td{
+	background-color:#E0E0BB;
+}
+
+
+
+/*------------------------------------------------------*/
+/* Estilos de paginas Login	y Register	  				*/
+/*------------------------------------------------------*/
+
+td.loginRegisterTd {
+	text-align:center;
+	vertical-align:middle;
+	border:5px double #FFCC66;
+}
+
+p.loginRegisterP {
+	font:16pt bold Arial;
+}
+ 
+table.registerTable {
+	width:50%;
+}
+
+table.registerTable td {
+	margin:20px 20px 20px 20px;
+	border:3px inset #885555;
+}
+
+td.registerIzdaTd {
+	color: #1166AA;
+}
+
+td.registerDchaTd {
+	font: 14pt normal Verdana;
+}
+
+
+
+/*------------------------------------------------------*/
+/* Estilos de los indices de Administrador y usuario	*/
+/*------------------------------------------------------*/
+ul.indexUl {
+	margin-left:10px;
+	margin-top:20px;
+	padding-left:10px;
+	list-style-type:disc;
+	font:normal 12pt "Times New Roman";
+	text-indent:0px;
+}
+
+ul.indexUl  li{
+	line-height:30px;
+}
+
+p.indexTitleP  {
+	text-align:center;
+	font:bold 14pt Arial;
+	text-decoration:underline;
+}
+
+
+
+/*------------------------------------------------------*/
+/* Estilos comunes varios								*/
+/*------------------------------------------------------*/
+
+p.titleP {
+	text-align:center;
+	font:bold 15pt "Times New Roman";
+}
+
+p.errorP {
+	color:red;
+}
+	
+.espera {
+	color:green;
+	font:normal 10pt Verdana;
+}
+
+.desactivado {
+	display:none;
+}
+
+td.emptyWideTd {
+	width:100%;
+}
+
+.centred {
+	text-align:center;
+} 
+
+.left {
+	text-align:left;
+} 
+
+.right {
+	text-align:center;
+}

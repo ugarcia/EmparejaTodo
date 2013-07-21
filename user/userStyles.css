@@ -1,0 +1,240 @@
+
+/*------------------------------------------------------*/
+/* Estilos del indice - panel izdo.					    */
+/*------------------------------------------------------*/
+td.indexTd {
+	width:15%;
+	background-color:#DDEECC;
+	font:normal 13pt Arial;
+	border:5px double #FFCC66;
+}
+/*------------------------------------------------------*/
+
+
+/*------------------------------------------------------*/
+/* Estilos de la celda de contenido - panel dcho. 		*/
+/*------------------------------------------------------*/
+
+td.contentTd {
+	background-color:#F0F0A0;
+	text-align:center;
+	font:normal 15pt Arial;
+	border:5px double #FFCC66;
+}
+/*------------------------------------------------------*/
+
+
+/*------------------------------------------------------*/
+/* Estilos pantalla 'Welcome' 							*/
+/*------------------------------------------------------*/
+p#bigContentP {
+	margin:100px 20px 20px 20px;
+	font:bolder 70pt Arial;
+	color:#AA2266;
+	border:10px solid #7755CC;
+}
+
+
+
+
+/*------------------------------------------------------*/
+/* Estilos de opcion 1: 'Definir baraja' 				*/
+/*------------------------------------------------------*/
+
+table.tablaCartas {
+	text-align:center;
+	width:100%;
+	height :100%;
+	border-collapse:collapse;
+}
+
+table.tablaCartas  td{
+	border:1px solid black;
+}
+
+td#reversoTd {
+	width:20%;
+}
+
+/* Estilos del iFrame utilizado para 'camuflar'
+ la subida de archivos al servidor*/
+iframe#resultUpload {
+	text-align:center;
+	height:50px;
+	width:100%;
+	margin-top:20px;
+	border:0px;	
+}
+/*------------------------------------------------------*/
+
+
+/*------------------------------------------------------*/
+/* Estilos de opcion 2: 'Elegir baraja' 				*/
+/*------------------------------------------------------*/
+
+p.filtersP {
+	text-align:left;
+	text-indent:20px;
+}
+
+td.cabeceraBarajasTd  {
+	text-align:left;
+	font: bold 12pt Arial;
+	padding:0px 10px 5px 10px;
+	border-bottom: 2px solid green;
+} 
+
+td.cabeceraBarajasTd a {
+	color:blue;
+	text-decoration:none;
+} 
+
+td.entradaBarajasTd {
+	font: normal 11pt "Times New Roman";
+	padding:5px 5px 5px 5px;
+} 
+
+td.entradaBarajasTd  a {
+	color:black;
+	text-decoration:none;
+}
+
+td.entradaBarajasTd  a img {
+	margin-left:10px;
+}
+
+td.detalleTd {
+	padding:10px 30px;
+	text-align:left;
+}
+
+table#tablaBarajas {
+	border-collapse:collapse;
+}
+
+td.barajaInfoTd {
+	text-align:left;
+	font:normal 9pt Arial;
+	color:#222222;
+}
+
+p.eventsP {
+	margin:0px;
+	padding: 0px;
+}
+
+img.mediumSize {
+	height:100px;
+	width:70px;
+}
+
+ img.descubierta {
+	border: 2px solid green;
+ }
+
+ img.reverso {
+	margin-right:50px;
+	border: 2px solid red;
+ }
+ /*------------------------------------------------------*/
+ 
+ 
+ /*------------------------------------------------------*/
+/* Estilos de opcion 3: 'Jugar' - iFrame del juego 		*/
+/*------------------------------------------------------*/
+
+iframe#gameFrame {
+	width:100%;
+	height:100%;
+	border:1px solid black;	
+}
+/*------------------------------------------------------*/
+
+ 
+/*------------------------------------------------------*/
+/* Estilos de opcion 4: 'Ver resultados'		  	 	*/
+/*------------------------------------------------------*/
+ 
+ p.filtersPuntuacionesP {
+	text-align:left;
+}
+
+td.cabeceraPuntuacionesTd  {
+	text-align:left;
+	font: bold 12pt Arial;
+	padding:0px 10px 5px 10px;
+	border-bottom: 2px solid green;
+} 
+
+td.cabeceraPuntuacionesTd a {
+	color:blue;
+	text-decoration:none;
+} 
+
+td.entradaPuntuacionesTd {
+	font: normal 11pt "Times New Roman";
+	padding:5px 5px 5px 5px;
+	width:auto;
+	white-space:nowrap;
+} 
+
+td.entradaPuntuacionesTd  a {
+	color:black;
+	text-decoration:none;
+}
+
+td.entradaPuntuacionesTd  a img {
+	margin-left:10px;
+}
+
+td.detallePuntuacionesTd {
+	padding:10px 30px;
+	text-align:left;
+	white-space:nowrap;
+}
+
+table#tablaPuntuaciones {
+	border-collapse:collapse;
+}
+
+td.puntuacionInfoTd {
+	text-align:left;
+	font:normal 9pt Arial;
+	color:#222222;
+}
+
+p.eventsPuntuacionesP {
+	margin:0px;
+	padding: 0px;
+}
+
+table#tablaDetallePuntuaciones {
+	border-collapse:collapse;
+}
+
+img.smallSize {
+	height:75px;
+	width:51px;
+}
+/*------------------------------------------------------*/
+ 
+
+/*------------------------------------------------------*/
+/* Estilos de opcion 5: 'Modificar registro'		  	 	*/
+/*------------------------------------------------------*/
+ 
+ table.modifyRegistryTable td {
+	margin:20px 20px 20px 20px;
+	border:3px inset #885555;
+}
+
+td.modifyRegistryIzdaTd {
+	color: #AA3377;
+}
+
+td.modifyRegistryDchaTd {
+	font: 14pt normal Verdana;
+}
+
+ 
+ 

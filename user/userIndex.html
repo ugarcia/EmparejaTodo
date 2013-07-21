@@ -1,0 +1,77 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+   
+ <html>
+	<head>
+		<title>
+			Empareja Todo - Vista Jugador
+		</title>
+		<link rel='stylesheet' href='../common/commonStyles.css' type='text/css'>
+		<link rel='stylesheet' href='userStyles.css' type='text/css'>
+		<script src="../common/common.js"></script>
+		<script src="definirBaraja.js"></script>
+		<script src="elegirBaraja.js"></script>
+		<script src="juegoCartas.js"></script>
+		<script src="verPuntuaciones.js"></script>
+		<script src="modificarRegistro.js"></script>
+		<script src="userIndex.js"></script>
+	</head>
+	<body onLoad='Javascript:resizeHeightToWin("userWinDiv");comprobarUser();' onResize='doUserResize()'>
+		<div id='userWinDiv' name='userWinDiv' class='winDiv'>
+			<table class='winTable'>
+				<tr class='headerFooterTr'>
+					<td id='headerTd' name='headerTd' colspan=2>
+						Empareja Todo - Vista Jugador
+					</td>
+				</tr>
+				<tr class='mainTr'>
+					<td class='indexTd'>
+						<p class='indexTitleP'>
+							INDICE
+						</p>
+						<ul class='indexUl'>
+							<li>
+								<a href='Javascript:mostrarVistaUser(1);'>
+									Definir Baraja
+								</a>
+							</li>
+							<li>
+								<a href='Javascript:mostrarVistaUser(2);'>
+									Seleccionar Baraja
+								</a>
+							</li>
+							<li>
+								<a href='Javascript:mostrarVistaUser(3);'>
+									Jugar Partida
+								</a>
+							</li>
+							<li>
+								<a href='Javascript:mostrarVistaUser(4);'>
+									Ver Puntuaciones
+								</a>
+							</li>
+							<li>
+								<a href='Javascript:mostrarVistaUser(5);'>
+									Cambiar Datos Registro
+								</a>
+							</li>
+						
+						
+						</ul>
+					</td>
+					<td class='contentTd' id='userContent' name='userContent'>
+						<p id='bigContentP' name='bigContentP'>
+							WELCOME PLAYER
+						</p>
+					</td>
+				</tr>
+				<tr class='headerFooterTr'>
+					<td colspan=2>
+						TDSW S.L. Copyright
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+ </html>

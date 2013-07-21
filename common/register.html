@@ -1,0 +1,110 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+   
+ <html>
+	<head>
+		<title>
+			Empareja Todo - Peticion Registro
+		</title>
+		<link rel='stylesheet' href='commonStyles.css' type='text/css'>
+		<script src="common.js"></script>
+		<script src="register.js"></script>
+	</head>
+	<body>
+		<table class='winTable'>
+			<tr class='headerFooterTr'>
+				<td>
+					Empareja Todo - Peticion Registro
+				</td>
+			</tr>
+			<tr class='mainTr'>
+				<td class='loginRegisterTd'>
+					<p class='titleP'>REGISTRO DE USUARIO</p>
+					<form id='registerForm' name='registerForm' method='POST' 
+					 onsubmit='return validarRegister()'>
+					 <center>
+					<table class='registerTable centred'>			
+						<tr>
+							<td class='left registerIzdaTd'>
+								Nombre:
+							</td>
+							<td class='left'>
+								<input type='text' id='nombreInput'
+								 name='nombreInput'>
+							</td>
+						</tr>
+						<tr>
+							<td class='left registerIzdaTd'>
+								Apellidos:
+							</td>
+							<td class='left'>
+								<input type='text' id='apellidosInput'
+								 name='apellidosInput'>
+							</td>
+						</tr>
+						<tr>
+							<td class='left registerIzdaTd'>
+								Edad:
+							</td>
+							<td class='left'>
+								<input type='text' id='edadInput'
+								 name='edadInput' size='2px'>
+							</td>
+						</tr>				
+						<tr>
+							<td class='left registerIzdaTd'>
+								Sexo:
+							</td>
+							<td class='left registerDchaTd'>
+								<input type='radio' id='sexoInput'
+								 name='sexoInput' value='h'>Hombre
+								<input type='radio' id='sexoInput'
+								 name='sexoInput' value='m'>Mujer
+							</td>
+						</tr>				
+						<tr>
+							<td class='left registerIzdaTd'>
+								Usuario:
+							</td>
+							<td class='left'>
+								<input type='text' id='usuarioInput'
+								 name='usuarioInput'>
+							</td>
+						</tr>
+						<tr>
+							<td class='left registerIzdaTd'>
+								Password:
+							</td>
+							<td class='left'>
+								<input type='password' id='passwordInput'
+								 name='passwordInput'>
+							</td>
+						</tr>
+						<tr>
+							<td class='left registerIzdaTd'>
+								Confirm password:
+							</td>
+							<td class='left'>
+								<input type='password' id='cPasswordInput'
+								 name='cPasswordInput'>
+							</td>
+						</tr>
+					</table>
+					</center>
+					<br/>
+						<input type='submit' id='registerSubmit'
+						 name='registerSubmit' value='Enviar Peticion'>
+					</form>
+					<br/>
+					<div id='eventosRegister' name ='eventosRegister'></div>
+				</td>
+			<tr class='headerFooterTr'>
+				<td>
+					TDSW S.L. Copyright
+				</td>
+			</tr>
+		</table>
+	</body>
+ </html>
+ 

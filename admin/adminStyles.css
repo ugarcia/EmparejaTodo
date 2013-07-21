@@ -1,0 +1,77 @@
+
+/*------------------------------------------------------*/
+/* Estilos del indice - panel izdo.					    */
+/*------------------------------------------------------*/
+td.indexTd {
+	width:20%;
+	background-color:#DDDDEE;
+	font:normal 13pt Arial;
+	border:5px double #FFCC66;
+}
+
+/*------------------------------------------------------*/
+/* Estilos de la celda de contenido - panel dcho. 		*/
+/*------------------------------------------------------*/
+td.contentTd {
+	background-color:#EEFFE0;
+	text-align:center;
+	font:normal 15pt Arial;
+	border:5px double #FFCC66;
+}
+
+/*------------------------------------------------------*/
+/* Estilos pantalla 'Welcome' 							*/
+/*------------------------------------------------------*/
+p#bigContentP {
+	margin:100px 20px 20px 20px;
+	font:bolder 70pt Arial;
+	color:#CC7755;
+	border:10px solid #AAAAAA;
+}
+
+
+/*------------------------------------------------------*/
+/* Estilos de listas de usuarios / peticiones			*/
+/*------------------------------------------------------*/ 
+p.filtersP {
+	text-align:left;
+	text-indent:20px;
+}
+ 
+td.cabeceraUsuariosTd {
+	color:blue;
+	text-align:center;
+	font: bold 12pt Arial;
+	text-decoration:underline;
+	padding:2px 5px 2px 5px;
+} 
+
+td.entradaUsuariosTd {
+	text-align:left;
+	font: normal 11pt "Times New Roman";
+	padding:2px 5px 2px 5px;
+} 
+
+td.entradaUsuariosTd  a {
+	color:black;
+	text-decoration:none;
+}
+
+td.detalleTd {
+	padding:10px 1px;
+}
+
+table#tablaUsuarios {
+	border-collapse:collapse;
+}
+
+td.userInfoTd {
+	text-align:left;
+	font:normal 9pt Arial;
+	color:#222222;
+}
+
+p.eventsP {
+	margin:0px;
+	padding: 0px;
+}

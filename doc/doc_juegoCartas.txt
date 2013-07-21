@@ -1,0 +1,116 @@
+------------------------------------------------------------
+--------DOCUMENTACIÓN PRÁCTICA DHTML (JUEGO CARTAS)---------
+------------------------------------------------------------
+------------------------------------------------------------
+--------------------------------------Unai García BG-0140---
+------------------------------------------------------------
+
+Los aspectos más destacados del documento html son los siguientes:
+
+  Diseño:
+----------
+
+El cuerpo del documento se estructura como una tabla de una fila y
+dos columnas, presentando en la celda izquierda el formulario con
+los correspondientes controles (selects, input text, button, etc.)
+y en la derecha el espacio de las cartas del juego. La parte izquierda
+tiene asignado un 15% de anchura del total del documeto y el lado
+derecho, por tanto, el resto (85%).
+Se asignan ids y clases a varias etiquetas para su asociación a estilos
+CSS y código Javascript.
+Se intenta mediante estilos CSS dejar el aspecto visual lo más parecido
+a lo mostrado en el enunciado.
+
+  Funcionalidad:
+-----------------
+ 
+Cuando acaba de cargar el cuerpo del html, se llama a una función
+Javascript 'loadInputs' que carga las opciones de los select del
+formulario. Se ha definido algunas variables globales para fijar estos
+rangos.
+
+Una vez cargados los formularios, con click en el botón 'Jugar' se
+invocan las funciones Javascript 'mostrarCartas' y 'startGame' que
+muestran las cartas e inician el juego:
+
+'mostrarCartas' --> llamada secuencial a funciones 'asignarCartas' y
+			 'colocarCartas'
+
+  'asignarCartas' --> Se recorren aleatoriamente las imagenes disponibles
+  para las cartas y se asignan siempre a una pareja de cartas. Se repite
+  este proceso hasta que no quedan cartas por asignar. Para ello se declaran
+  un array de imágenes (local) y uno de cartas (global - conteniendo el
+  numero de imagen asignada a cada carta). También se declara una variable
+  global con el número de imágenes.
+
+  'colocarCartas' --> Se obtienen las dimensiones de la ventana y los datos
+  proporcionados en el formulario. En función de ello se calcula todo lo
+  demás: numero de cartas por fila, anchura y altura de cada carta, etc..
+  Se ha tratado de aprovechar todo el espacio posible e intercalar filas
+  de distinto numero de cartas. Se va construyendo una cadena de html con
+  las imagenes de las cartas para al final asignarselo a la propiedad
+  'innerHtml' del elemento contenedor.
+
+
+'startGame' --> Se inhabilitan/inicializan controles varios y se cambia el
+ valor de la variable global 'finalizado' a 0, indicando así que el juego 
+ ha comenzado. Si se ha introducido un número válido en la casilla de tiempo,
+ se creará un intervalo de llamadas a 'countDown' cada segundo.
+
+  'countDown' --> Decrementa el tiempo en una unidad y comprueba si ha
+  finalizado. En tal caso, finaliza el intervalo, avisa al jugador y llama
+  a la funcion 'finalizar'
+
+    'finalizar' --> Si el intervalo está activo, lo finaliza. Además, activa
+    los controles desactivados al inicio del juego y pone la variable global
+    'finalizado' a 1, indicando así que el juego ha finalizado.
+
+Llegados a este punto, el juego ha comenzado, con lo cual al hacer click
+ sobre  una carta se dispara el evento y se llama a la función Javascript
+ 'voltearCarta':
+
+'voltearCarta' --> Primero comprueba que:
+
+	- El juego no haya finalizado
+	- Se hayan tapado las dos cartas (distintas) de la jugada anterior si
+	  la hubiere (esto se controla con la variable global 'esperando')
+	- La carta no esté ya volteada, claro (mediante un array global).
+
+Si se cumplen estas condiciones, se voltea la carta. 
+
+Si la carta en cuestión es:
+
+	- La primera de la jugada: Se asigna su número a la variable global
+	  'primeraVolteada' y se prosigue con el juego.
+
+	- La segunda de la jugada: Se comprueba si es igual a la
+	  'primeraVolteada':
+
+		- Si lo es, marcará 'primeraVolteada' como -1 (la siguiente
+		  será la primera), y llama a la función 'variarPuntuacion'
+		  (con parámetro +10) para sumar puntos. Tras esto se comprueba
+		  si están todas volteadas mediante la función 'todasVolteadas',
+		  avisando en su caso al usuario y finalizando el juego mediante
+		  llamada a 'finalizar'.
+
+		- Si no lo es, se marca 'esperando' a 1 y se establece un
+		  segundo de delay para la llamada a la función 'taparCartas'
+		  (con parámetros los números de las dos cartas).
+
+  'variarPuntuacion' --> Simplemente varía el valor del control añadiéndole la
+  cantidad recibida como parámetro. Después comprueba su valor para darle el
+  color correspondiente.
+
+  'todasVolteadas' --> Simplemente recorre el array global para ver si todas
+  están o no volteadas y devuelve un booleano.
+
+  'taparCartas' --> tapa (desvoltea) las dos cartas cuyos números recibe como
+  parámetro, marca 'primeraVolteada' a -1 y esperando a '0' (para permitir
+  voltear la siguiente primera carta) y disminuye la puntuación mediante llamada
+  a la función 'variarPuntuaion' (con parámetro -5).
+
+------------------------------------------------------------
+------------------------------------------------------------
+-------------------------- FIN -----------------------------
+------------------------------------------------------------
+------------------------------------------------------------
