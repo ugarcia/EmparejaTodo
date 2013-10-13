@@ -1,9 +1,9 @@
 <?php
 	session_start();
 	
-	$mysqlConn = @mysql_connect('localhost','ac3jyz8c_root','')
+	$mysqlConn = @mysql_connect('localhost','root','')
 					or die('No se pudo conectar a mySQL');
-	$mysqlDB = @mysql_select_db('ac3jyz8c_emparejatodo')
+	$mysqlDB = @mysql_select_db('emparejatodo')
 					or die('No se pudo recuperar la BD');
 	
 	

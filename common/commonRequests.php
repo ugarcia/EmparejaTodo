@@ -1,9 +1,9 @@
 <?php
 	session_start();
 	
-	$mysqlConn = @mysql_connect('localhost','ac3jyz8c_root','')
+	$mysqlConn = @mysql_connect('localhost','root','')
 					or die('No se pudo conectar a mySQL');
-	$mysqlDB = @mysql_select_db('ac3jyz8c_emparejatodo')
+	$mysqlDB = @mysql_select_db('emparejatodo')
 					or die('No se pudo recuperar la BD');
 	
 	if (isSet($_POST['tipoPeticion'])) {
@@ -55,7 +55,7 @@
 							 edad,sexo,usuario,password,estado,
 							fechaSolicitado) values
 							('$nombre','$apellidos','$edad','$sexo',
-							 '$usuario','$password','solicitado',
+							 '$usuario','$password','autorizado',
 							 NOW())
 						";
 				if ($result =@mysql_query($query))
