@@ -1,4 +1,3 @@
-
 /* Valida datos de registro, realiza petición al servidor y 
 	muestra el error o exito de la operacion */
 function validarRegister() {
@@ -64,8 +63,8 @@ function validarRegister() {
 			switch (parseInt(signResult)) {
 				case 0: {
 					document.getElementById('registerSubmit').style.visibility='hidden';
-					cadHTML = "<p><b>Peticion de registro realizada</b></p>";
-					cadHTML += "<p>Deberá esperar a ser autorizado para poder entrar al sitio</p>";
+					cadHTML = "<p><b>User registeres</b></p>";
+					cadHTML += "<p>Login to start playing!!</p>";
 					cadHTML += "<input type='button' value='Continuar' ";
 					cadHTML += " onClick='Javascript:document.location.href="+'"'+"login.html"+'"'+"'>";
 					break;

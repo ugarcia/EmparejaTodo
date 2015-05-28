@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^cards\.frontcoder\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.cards\.frontcoder\.com$
+RewriteRule ^/?$ "http\:\/\/frontcoder\.com\/EmparejaTodo" [R=301,L]
+
